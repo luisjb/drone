@@ -1,0 +1,2834 @@
+{
+ "type": "FeatureCollection",
+ "features": [
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.4495769,
+     -34.5997838
+    ]
+   },
+   "properties": {
+    "id": 1,
+    "lote": null,
+    "tag": null,
+    "vin": null,
+    "modelo": null,
+    "color": null,
+    "conf": 0.25,
+    "largo_m": 4.5,
+    "rumbo": 180,
+    "foto": "DJI_20261014100001_0002_D.JPG",
+    "recorte": "recortes/auto_0001.jpg"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.4498629,
+     -34.5997876
+    ]
+   },
+   "properties": {
+    "id": 2,
+    "lote": null,
+    "tag": 10,
+    "vin": null,
+    "modelo": null,
+    "color": null,
+    "conf": 0.53,
+    "largo_m": 4.4,
+    "rumbo": 177,
+    "foto": "DJI_20261014100000_0001_D.JPG",
+    "recorte": "recortes/auto_0002.jpg"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.4499046,
+     -34.5997892
+    ]
+   },
+   "properties": {
+    "id": 3,
+    "lote": null,
+    "tag": null,
+    "vin": null,
+    "modelo": null,
+    "color": null,
+    "conf": 0.72,
+    "largo_m": 4.3,
+    "rumbo": 178,
+    "foto": "DJI_20261014100000_0001_D.JPG",
+    "recorte": "recortes/auto_0003.jpg"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.4500926,
+     -34.5997899
+    ]
+   },
+   "properties": {
+    "id": 4,
+    "lote": null,
+    "tag": null,
+    "vin": null,
+    "modelo": null,
+    "color": null,
+    "conf": 0.62,
+    "largo_m": 5.0,
+    "rumbo": 169,
+    "foto": "DJI_20261014100000_0001_D.JPG",
+    "recorte": "recortes/auto_0004.jpg"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.4500176,
+     -34.5997902
+    ]
+   },
+   "properties": {
+    "id": 5,
+    "lote": null,
+    "tag": null,
+    "vin": null,
+    "modelo": null,
+    "color": null,
+    "conf": 0.7,
+    "largo_m": 4.3,
+    "rumbo": 179,
+    "foto": "DJI_20261014100000_0001_D.JPG",
+    "recorte": "recortes/auto_0005.jpg"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.4496362,
+     -34.599791
+    ]
+   },
+   "properties": {
+    "id": 6,
+    "lote": null,
+    "tag": null,
+    "vin": null,
+    "modelo": null,
+    "color": null,
+    "conf": 0.72,
+    "largo_m": 4.5,
+    "rumbo": 177,
+    "foto": "DJI_20261014100001_0002_D.JPG",
+    "recorte": "recortes/auto_0006.jpg"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.4496028,
+     -34.5997912
+    ]
+   },
+   "properties": {
+    "id": 7,
+    "lote": null,
+    "tag": null,
+    "vin": null,
+    "modelo": null,
+    "color": null,
+    "conf": 0.56,
+    "largo_m": 4.9,
+    "rumbo": 175,
+    "foto": "DJI_20261014100001_0002_D.JPG",
+    "recorte": "recortes/auto_0007.jpg"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.4496836,
+     -34.5997915
+    ]
+   },
+   "properties": {
+    "id": 8,
+    "lote": null,
+    "tag": null,
+    "vin": null,
+    "modelo": null,
+    "color": null,
+    "conf": 0.63,
+    "largo_m": 5.2,
+    "rumbo": 175,
+    "foto": "DJI_20261014100001_0002_D.JPG",
+    "recorte": "recortes/auto_0008.jpg"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.4499574,
+     -34.5997922
+    ]
+   },
+   "properties": {
+    "id": 9,
+    "lote": null,
+    "tag": null,
+    "vin": null,
+    "modelo": null,
+    "color": null,
+    "conf": 0.5,
+    "largo_m": 3.4,
+    "rumbo": 1,
+    "foto": "DJI_20261014100000_0001_D.JPG",
+    "recorte": "recortes/auto_0009.jpg"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.449551,
+     -34.5997934
+    ]
+   },
+   "properties": {
+    "id": 10,
+    "lote": null,
+    "tag": 9,
+    "vin": "8AJKB8CD0R7654321",
+    "modelo": "Corolla Cross",
+    "color": "Gris",
+    "conf": 0.76,
+    "largo_m": 4.4,
+    "rumbo": 1,
+    "foto": "DJI_20261014100001_0002_D.JPG",
+    "recorte": "recortes/auto_0010.jpg"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.4499334,
+     -34.5997938
+    ]
+   },
+   "properties": {
+    "id": 11,
+    "lote": null,
+    "tag": null,
+    "vin": null,
+    "modelo": null,
+    "color": null,
+    "conf": 0.74,
+    "largo_m": 3.4,
+    "rumbo": 0,
+    "foto": "DJI_20261014100000_0001_D.JPG",
+    "recorte": "recortes/auto_0011.jpg"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.4497164,
+     -34.5997944
+    ]
+   },
+   "properties": {
+    "id": 12,
+    "lote": null,
+    "tag": null,
+    "vin": null,
+    "modelo": null,
+    "color": null,
+    "conf": 0.21,
+    "largo_m": 4.1,
+    "rumbo": 175,
+    "foto": "DJI_20261014100001_0002_D.JPG",
+    "recorte": "recortes/auto_0012.jpg"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.4493893,
+     -34.5997963
+    ]
+   },
+   "properties": {
+    "id": 13,
+    "lote": null,
+    "tag": null,
+    "vin": null,
+    "modelo": null,
+    "color": null,
+    "conf": 0.26,
+    "largo_m": 4.1,
+    "rumbo": 3,
+    "foto": "DJI_20261014100001_0002_D.JPG",
+    "recorte": "recortes/auto_0013.jpg"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.4495221,
+     -34.5998005
+    ]
+   },
+   "properties": {
+    "id": 14,
+    "lote": null,
+    "tag": null,
+    "vin": null,
+    "modelo": null,
+    "color": null,
+    "conf": 0.63,
+    "largo_m": 3.2,
+    "rumbo": 0,
+    "foto": "DJI_20261014100001_0002_D.JPG",
+    "recorte": "recortes/auto_0014.jpg"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.4500466,
+     -34.5998051
+    ]
+   },
+   "properties": {
+    "id": 15,
+    "lote": null,
+    "tag": null,
+    "vin": null,
+    "modelo": null,
+    "color": null,
+    "conf": 0.79,
+    "largo_m": 4.3,
+    "rumbo": 168,
+    "foto": "DJI_20261014100000_0001_D.JPG",
+    "recorte": "recortes/auto_0015.jpg"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.4494026,
+     -34.599833
+    ]
+   },
+   "properties": {
+    "id": 16,
+    "lote": null,
+    "tag": null,
+    "vin": null,
+    "modelo": null,
+    "color": null,
+    "conf": 0.66,
+    "largo_m": 4.5,
+    "rumbo": 91,
+    "foto": "DJI_20261014100001_0002_D.JPG",
+    "recorte": "recortes/auto_0016.jpg"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.4493338,
+     -34.5998381
+    ]
+   },
+   "properties": {
+    "id": 17,
+    "lote": null,
+    "tag": null,
+    "vin": null,
+    "modelo": null,
+    "color": null,
+    "conf": 0.25,
+    "largo_m": 2.6,
+    "rumbo": 83,
+    "foto": "DJI_20261014100001_0002_D.JPG",
+    "recorte": "recortes/auto_0017.jpg"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.4493843,
+     -34.5998728
+    ]
+   },
+   "properties": {
+    "id": 18,
+    "lote": "Lote B",
+    "tag": null,
+    "vin": null,
+    "modelo": null,
+    "color": null,
+    "conf": 0.65,
+    "largo_m": 4.8,
+    "rumbo": 84,
+    "foto": "DJI_20261014100001_0002_D.JPG",
+    "recorte": "recortes/auto_0018.jpg"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.4499925,
+     -34.5999093
+    ]
+   },
+   "properties": {
+    "id": 19,
+    "lote": "Lote A",
+    "tag": null,
+    "vin": null,
+    "modelo": null,
+    "color": null,
+    "conf": 0.62,
+    "largo_m": 5.0,
+    "rumbo": 178,
+    "foto": "DJI_20261014100000_0001_D.JPG",
+    "recorte": "recortes/auto_0019.jpg"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.4497693,
+     -34.5999105
+    ]
+   },
+   "properties": {
+    "id": 20,
+    "lote": "Lote A",
+    "tag": 3,
+    "vin": "8AJBA3CD5R1234567",
+    "modelo": "Hilux SRX",
+    "color": "Blanco",
+    "conf": 0.62,
+    "largo_m": 4.1,
+    "rumbo": 2,
+    "foto": "DJI_20261014100000_0001_D.JPG",
+    "recorte": "recortes/auto_0020.jpg"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.4499105,
+     -34.5999109
+    ]
+   },
+   "properties": {
+    "id": 21,
+    "lote": "Lote A",
+    "tag": null,
+    "vin": null,
+    "modelo": null,
+    "color": null,
+    "conf": 0.77,
+    "largo_m": 4.5,
+    "rumbo": 1,
+    "foto": "DJI_20261014100000_0001_D.JPG",
+    "recorte": "recortes/auto_0021.jpg"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.4498551,
+     -34.5999113
+    ]
+   },
+   "properties": {
+    "id": 22,
+    "lote": "Lote A",
+    "tag": null,
+    "vin": null,
+    "modelo": null,
+    "color": null,
+    "conf": 0.67,
+    "largo_m": 4.9,
+    "rumbo": 3,
+    "foto": "DJI_20261014100000_0001_D.JPG",
+    "recorte": "recortes/auto_0022.jpg"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.4498817,
+     -34.5999122
+    ]
+   },
+   "properties": {
+    "id": 23,
+    "lote": "Lote A",
+    "tag": null,
+    "vin": null,
+    "modelo": null,
+    "color": null,
+    "conf": 0.56,
+    "largo_m": 4.4,
+    "rumbo": 2,
+    "foto": "DJI_20261014100000_0001_D.JPG",
+    "recorte": "recortes/auto_0023.jpg"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.4500195,
+     -34.5999126
+    ]
+   },
+   "properties": {
+    "id": 24,
+    "lote": "Lote A",
+    "tag": null,
+    "vin": null,
+    "modelo": null,
+    "color": null,
+    "conf": 0.7,
+    "largo_m": 4.4,
+    "rumbo": 178,
+    "foto": "DJI_20261014100000_0001_D.JPG",
+    "recorte": "recortes/auto_0024.jpg"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.4498281,
+     -34.5999128
+    ]
+   },
+   "properties": {
+    "id": 25,
+    "lote": "Lote A",
+    "tag": null,
+    "vin": null,
+    "modelo": null,
+    "color": null,
+    "conf": 0.71,
+    "largo_m": 4.5,
+    "rumbo": 5,
+    "foto": "DJI_20261014100000_0001_D.JPG",
+    "recorte": "recortes/auto_0025.jpg"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.449964,
+     -34.5999139
+    ]
+   },
+   "properties": {
+    "id": 26,
+    "lote": "Lote A",
+    "tag": null,
+    "vin": null,
+    "modelo": null,
+    "color": null,
+    "conf": 0.68,
+    "largo_m": 4.4,
+    "rumbo": 179,
+    "foto": "DJI_20261014100000_0001_D.JPG",
+    "recorte": "recortes/auto_0026.jpg"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.4497416,
+     -34.5999143
+    ]
+   },
+   "properties": {
+    "id": 27,
+    "lote": "Lote A",
+    "tag": 0,
+    "vin": null,
+    "modelo": null,
+    "color": null,
+    "conf": 0.61,
+    "largo_m": 4.1,
+    "rumbo": 2,
+    "foto": "DJI_20261014100000_0001_D.JPG",
+    "recorte": "recortes/auto_0027.jpg"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.4496919,
+     -34.5999161
+    ]
+   },
+   "properties": {
+    "id": 28,
+    "lote": "Lote B",
+    "tag": null,
+    "vin": null,
+    "modelo": null,
+    "color": null,
+    "conf": 0.51,
+    "largo_m": 4.4,
+    "rumbo": 179,
+    "foto": "DJI_20261014100001_0002_D.JPG",
+    "recorte": "recortes/auto_0028.jpg"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.449936,
+     -34.5999166
+    ]
+   },
+   "properties": {
+    "id": 29,
+    "lote": "Lote A",
+    "tag": null,
+    "vin": null,
+    "modelo": null,
+    "color": null,
+    "conf": 0.76,
+    "largo_m": 3.9,
+    "rumbo": 0,
+    "foto": "DJI_20261014100000_0001_D.JPG",
+    "recorte": "recortes/auto_0029.jpg"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.4496572,
+     -34.5999171
+    ]
+   },
+   "properties": {
+    "id": 30,
+    "lote": "Lote B",
+    "tag": null,
+    "vin": null,
+    "modelo": null,
+    "color": null,
+    "conf": 0.66,
+    "largo_m": 4.3,
+    "rumbo": 180,
+    "foto": "DJI_20261014100001_0002_D.JPG",
+    "recorte": "recortes/auto_0030.jpg"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.4498009,
+     -34.5999173
+    ]
+   },
+   "properties": {
+    "id": 31,
+    "lote": "Lote A",
+    "tag": null,
+    "vin": null,
+    "modelo": null,
+    "color": null,
+    "conf": 0.48,
+    "largo_m": 4.3,
+    "rumbo": 4,
+    "foto": "DJI_20261014100000_0001_D.JPG",
+    "recorte": "recortes/auto_0031.jpg"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.4497204,
+     -34.5999184
+    ]
+   },
+   "properties": {
+    "id": 32,
+    "lote": "Lote B",
+    "tag": null,
+    "vin": null,
+    "modelo": null,
+    "color": null,
+    "conf": 0.77,
+    "largo_m": 4.4,
+    "rumbo": 179,
+    "foto": "DJI_20261014100001_0002_D.JPG",
+    "recorte": "recortes/auto_0032.jpg"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.4496251,
+     -34.5999186
+    ]
+   },
+   "properties": {
+    "id": 33,
+    "lote": "Lote B",
+    "tag": null,
+    "vin": null,
+    "modelo": null,
+    "color": null,
+    "conf": 0.81,
+    "largo_m": 4.3,
+    "rumbo": 0,
+    "foto": "DJI_20261014100001_0002_D.JPG",
+    "recorte": "recortes/auto_0033.jpg"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.4491539,
+     -34.59992
+    ]
+   },
+   "properties": {
+    "id": 34,
+    "lote": "Lote B",
+    "tag": null,
+    "vin": null,
+    "modelo": null,
+    "color": null,
+    "conf": 0.46,
+    "largo_m": 5.0,
+    "rumbo": 180,
+    "foto": "DJI_20261014100001_0002_D.JPG",
+    "recorte": "recortes/auto_0034.jpg"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.4495968,
+     -34.5999204
+    ]
+   },
+   "properties": {
+    "id": 35,
+    "lote": "Lote B",
+    "tag": null,
+    "vin": null,
+    "modelo": null,
+    "color": null,
+    "conf": 0.77,
+    "largo_m": 4.1,
+    "rumbo": 0,
+    "foto": "DJI_20261014100001_0002_D.JPG",
+    "recorte": "recortes/auto_0035.jpg"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.4492397,
+     -34.5999204
+    ]
+   },
+   "properties": {
+    "id": 36,
+    "lote": "Lote B",
+    "tag": null,
+    "vin": null,
+    "modelo": null,
+    "color": null,
+    "conf": 0.76,
+    "largo_m": 4.6,
+    "rumbo": 10,
+    "foto": "DJI_20261014100001_0002_D.JPG",
+    "recorte": "recortes/auto_0036.jpg"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.4493271,
+     -34.5999209
+    ]
+   },
+   "properties": {
+    "id": 37,
+    "lote": "Lote B",
+    "tag": null,
+    "vin": null,
+    "modelo": null,
+    "color": null,
+    "conf": 0.76,
+    "largo_m": 3.6,
+    "rumbo": 179,
+    "foto": "DJI_20261014100001_0002_D.JPG",
+    "recorte": "recortes/auto_0037.jpg"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.4494274,
+     -34.5999213
+    ]
+   },
+   "properties": {
+    "id": 38,
+    "lote": "Lote B",
+    "tag": null,
+    "vin": null,
+    "modelo": null,
+    "color": null,
+    "conf": 0.78,
+    "largo_m": 4.7,
+    "rumbo": 179,
+    "foto": "DJI_20261014100001_0002_D.JPG",
+    "recorte": "recortes/auto_0038.jpg"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.4493957,
+     -34.5999216
+    ]
+   },
+   "properties": {
+    "id": 39,
+    "lote": "Lote B",
+    "tag": null,
+    "vin": null,
+    "modelo": null,
+    "color": null,
+    "conf": 0.76,
+    "largo_m": 4.0,
+    "rumbo": 1,
+    "foto": "DJI_20261014100001_0002_D.JPG",
+    "recorte": "recortes/auto_0039.jpg"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.4495093,
+     -34.5999218
+    ]
+   },
+   "properties": {
+    "id": 40,
+    "lote": "Lote B",
+    "tag": null,
+    "vin": null,
+    "modelo": null,
+    "color": null,
+    "conf": 0.8,
+    "largo_m": 3.4,
+    "rumbo": 180,
+    "foto": "DJI_20261014100001_0002_D.JPG",
+    "recorte": "recortes/auto_0040.jpg"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.4492739,
+     -34.5999221
+    ]
+   },
+   "properties": {
+    "id": 41,
+    "lote": "Lote B",
+    "tag": null,
+    "vin": null,
+    "modelo": null,
+    "color": null,
+    "conf": 0.8,
+    "largo_m": 5.0,
+    "rumbo": 179,
+    "foto": "DJI_20261014100001_0002_D.JPG",
+    "recorte": "recortes/auto_0041.jpg"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.4495364,
+     -34.5999231
+    ]
+   },
+   "properties": {
+    "id": 42,
+    "lote": "Lote B",
+    "tag": null,
+    "vin": null,
+    "modelo": null,
+    "color": null,
+    "conf": 0.68,
+    "largo_m": 4.2,
+    "rumbo": 179,
+    "foto": "DJI_20261014100001_0002_D.JPG",
+    "recorte": "recortes/auto_0042.jpg"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.4494556,
+     -34.599924
+    ]
+   },
+   "properties": {
+    "id": 43,
+    "lote": "Lote B",
+    "tag": null,
+    "vin": null,
+    "modelo": null,
+    "color": null,
+    "conf": 0.75,
+    "largo_m": 4.3,
+    "rumbo": 178,
+    "foto": "DJI_20261014100001_0002_D.JPG",
+    "recorte": "recortes/auto_0043.jpg"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.449186,
+     -34.5999242
+    ]
+   },
+   "properties": {
+    "id": 44,
+    "lote": "Lote B",
+    "tag": null,
+    "vin": null,
+    "modelo": null,
+    "color": null,
+    "conf": 0.46,
+    "largo_m": 4.4,
+    "rumbo": 3,
+    "foto": "DJI_20261014100001_0002_D.JPG",
+    "recorte": "recortes/auto_0044.jpg"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.4494839,
+     -34.5999245
+    ]
+   },
+   "properties": {
+    "id": 45,
+    "lote": "Lote B",
+    "tag": null,
+    "vin": null,
+    "modelo": null,
+    "color": null,
+    "conf": 0.76,
+    "largo_m": 4.1,
+    "rumbo": 179,
+    "foto": "DJI_20261014100001_0002_D.JPG",
+    "recorte": "recortes/auto_0045.jpg"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.4493679,
+     -34.5999247
+    ]
+   },
+   "properties": {
+    "id": 46,
+    "lote": "Lote B",
+    "tag": null,
+    "vin": null,
+    "modelo": null,
+    "color": null,
+    "conf": 0.82,
+    "largo_m": 3.8,
+    "rumbo": 2,
+    "foto": "DJI_20261014100001_0002_D.JPG",
+    "recorte": "recortes/auto_0046.jpg"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.4492117,
+     -34.5999256
+    ]
+   },
+   "properties": {
+    "id": 47,
+    "lote": "Lote B",
+    "tag": null,
+    "vin": null,
+    "modelo": null,
+    "color": null,
+    "conf": 0.74,
+    "largo_m": 4.7,
+    "rumbo": 7,
+    "foto": "DJI_20261014100001_0002_D.JPG",
+    "recorte": "recortes/auto_0047.jpg"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.4492985,
+     -34.5999261
+    ]
+   },
+   "properties": {
+    "id": 48,
+    "lote": "Lote B",
+    "tag": null,
+    "vin": null,
+    "modelo": null,
+    "color": null,
+    "conf": 0.7,
+    "largo_m": 4.2,
+    "rumbo": 180,
+    "foto": "DJI_20261014100001_0002_D.JPG",
+    "recorte": "recortes/auto_0048.jpg"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.4495645,
+     -34.5999264
+    ]
+   },
+   "properties": {
+    "id": 49,
+    "lote": "Lote B",
+    "tag": null,
+    "vin": null,
+    "modelo": null,
+    "color": null,
+    "conf": 0.8,
+    "largo_m": 4.2,
+    "rumbo": 1,
+    "foto": "DJI_20261014100001_0002_D.JPG",
+    "recorte": "recortes/auto_0049.jpg"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.4499907,
+     -34.5999574
+    ]
+   },
+   "properties": {
+    "id": 50,
+    "lote": "Lote A",
+    "tag": null,
+    "vin": null,
+    "modelo": null,
+    "color": null,
+    "conf": 0.73,
+    "largo_m": 3.9,
+    "rumbo": 1,
+    "foto": "DJI_20261014100000_0001_D.JPG",
+    "recorte": "recortes/auto_0050.jpg"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.4500146,
+     -34.5999578
+    ]
+   },
+   "properties": {
+    "id": 51,
+    "lote": "Lote A",
+    "tag": null,
+    "vin": null,
+    "modelo": null,
+    "color": null,
+    "conf": 0.75,
+    "largo_m": 4.1,
+    "rumbo": 1,
+    "foto": "DJI_20261014100000_0001_D.JPG",
+    "recorte": "recortes/auto_0051.jpg"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.4502096,
+     -34.5999578
+    ]
+   },
+   "properties": {
+    "id": 52,
+    "lote": "Lote A",
+    "tag": null,
+    "vin": null,
+    "modelo": null,
+    "color": null,
+    "conf": 0.67,
+    "largo_m": 4.0,
+    "rumbo": 175,
+    "foto": "DJI_20261014100000_0001_D.JPG",
+    "recorte": "recortes/auto_0052.jpg"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.4500986,
+     -34.5999582
+    ]
+   },
+   "properties": {
+    "id": 53,
+    "lote": "Lote A",
+    "tag": null,
+    "vin": null,
+    "modelo": null,
+    "color": null,
+    "conf": 0.59,
+    "largo_m": 4.7,
+    "rumbo": 174,
+    "foto": "DJI_20261014100000_0001_D.JPG",
+    "recorte": "recortes/auto_0053.jpg"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.4499641,
+     -34.5999592
+    ]
+   },
+   "properties": {
+    "id": 54,
+    "lote": "Lote A",
+    "tag": null,
+    "vin": null,
+    "modelo": null,
+    "color": null,
+    "conf": 0.76,
+    "largo_m": 3.8,
+    "rumbo": 180,
+    "foto": "DJI_20261014100000_0001_D.JPG",
+    "recorte": "recortes/auto_0054.jpg"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.4500397,
+     -34.5999596
+    ]
+   },
+   "properties": {
+    "id": 55,
+    "lote": "Lote A",
+    "tag": null,
+    "vin": null,
+    "modelo": null,
+    "color": null,
+    "conf": 0.71,
+    "largo_m": 4.1,
+    "rumbo": 1,
+    "foto": "DJI_20261014100000_0001_D.JPG",
+    "recorte": "recortes/auto_0055.jpg"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.4501281,
+     -34.5999612
+    ]
+   },
+   "properties": {
+    "id": 56,
+    "lote": "Lote A",
+    "tag": 4,
+    "vin": null,
+    "modelo": null,
+    "color": null,
+    "conf": 0.77,
+    "largo_m": 4.2,
+    "rumbo": 174,
+    "foto": "DJI_20261014100000_0001_D.JPG",
+    "recorte": "recortes/auto_0056.jpg"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.4497422,
+     -34.5999616
+    ]
+   },
+   "properties": {
+    "id": 57,
+    "lote": "Lote A",
+    "tag": 2,
+    "vin": null,
+    "modelo": null,
+    "color": null,
+    "conf": 0.58,
+    "largo_m": 4.1,
+    "rumbo": 2,
+    "foto": "DJI_20261014100000_0001_D.JPG",
+    "recorte": "recortes/auto_0057.jpg"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.4501788,
+     -34.5999618
+    ]
+   },
+   "properties": {
+    "id": 58,
+    "lote": "Lote A",
+    "tag": null,
+    "vin": null,
+    "modelo": null,
+    "color": null,
+    "conf": 0.61,
+    "largo_m": 5.2,
+    "rumbo": 172,
+    "foto": "DJI_20261014100000_0001_D.JPG",
+    "recorte": "recortes/auto_0058.jpg"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.4497154,
+     -34.599962
+    ]
+   },
+   "properties": {
+    "id": 59,
+    "lote": "Lote B",
+    "tag": 1,
+    "vin": null,
+    "modelo": null,
+    "color": null,
+    "conf": 0.7,
+    "largo_m": 4.2,
+    "rumbo": 179,
+    "foto": "DJI_20261014100001_0002_D.JPG",
+    "recorte": "recortes/auto_0059.jpg"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.4495983,
+     -34.5999626
+    ]
+   },
+   "properties": {
+    "id": 60,
+    "lote": "Lote B",
+    "tag": null,
+    "vin": null,
+    "modelo": null,
+    "color": null,
+    "conf": 0.65,
+    "largo_m": 3.8,
+    "rumbo": 2,
+    "foto": "DJI_20261014100001_0002_D.JPG",
+    "recorte": "recortes/auto_0060.jpg"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.4498285,
+     -34.5999631
+    ]
+   },
+   "properties": {
+    "id": 61,
+    "lote": "Lote A",
+    "tag": null,
+    "vin": null,
+    "modelo": null,
+    "color": null,
+    "conf": 0.65,
+    "largo_m": 4.5,
+    "rumbo": 180,
+    "foto": "DJI_20261014100000_0001_D.JPG",
+    "recorte": "recortes/auto_0061.jpg"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.4495683,
+     -34.5999658
+    ]
+   },
+   "properties": {
+    "id": 62,
+    "lote": "Lote B",
+    "tag": null,
+    "vin": null,
+    "modelo": null,
+    "color": null,
+    "conf": 0.8,
+    "largo_m": 4.4,
+    "rumbo": 1,
+    "foto": "DJI_20261014100001_0002_D.JPG",
+    "recorte": "recortes/auto_0062.jpg"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.4496431,
+     -34.5999667
+    ]
+   },
+   "properties": {
+    "id": 63,
+    "lote": "Lote B",
+    "tag": null,
+    "vin": null,
+    "modelo": null,
+    "color": null,
+    "conf": 0.47,
+    "largo_m": 5.4,
+    "rumbo": 0,
+    "foto": "DJI_20261014100001_0002_D.JPG",
+    "recorte": "recortes/auto_0063.jpg"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.4492415,
+     -34.5999669
+    ]
+   },
+   "properties": {
+    "id": 64,
+    "lote": "Lote B",
+    "tag": null,
+    "vin": null,
+    "modelo": null,
+    "color": null,
+    "conf": 0.73,
+    "largo_m": 4.5,
+    "rumbo": 2,
+    "foto": "DJI_20261014100001_0002_D.JPG",
+    "recorte": "recortes/auto_0064.jpg"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.4495092,
+     -34.5999672
+    ]
+   },
+   "properties": {
+    "id": 65,
+    "lote": "Lote B",
+    "tag": null,
+    "vin": null,
+    "modelo": null,
+    "color": null,
+    "conf": 0.79,
+    "largo_m": 4.8,
+    "rumbo": 179,
+    "foto": "DJI_20261014100001_0002_D.JPG",
+    "recorte": "recortes/auto_0065.jpg"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.449298,
+     -34.5999676
+    ]
+   },
+   "properties": {
+    "id": 66,
+    "lote": "Lote B",
+    "tag": null,
+    "vin": null,
+    "modelo": null,
+    "color": null,
+    "conf": 0.71,
+    "largo_m": 3.4,
+    "rumbo": 180,
+    "foto": "DJI_20261014100001_0002_D.JPG",
+    "recorte": "recortes/auto_0066.jpg"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.4493267,
+     -34.5999681
+    ]
+   },
+   "properties": {
+    "id": 67,
+    "lote": "Lote B",
+    "tag": null,
+    "vin": null,
+    "modelo": null,
+    "color": null,
+    "conf": 0.74,
+    "largo_m": 4.2,
+    "rumbo": 174,
+    "foto": "DJI_20261014100001_0002_D.JPG",
+    "recorte": "recortes/auto_0067.jpg"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.4493522,
+     -34.5999682
+    ]
+   },
+   "properties": {
+    "id": 68,
+    "lote": "Lote B",
+    "tag": null,
+    "vin": null,
+    "modelo": null,
+    "color": null,
+    "conf": 0.65,
+    "largo_m": 4.1,
+    "rumbo": 5,
+    "foto": "DJI_20261014100001_0002_D.JPG",
+    "recorte": "recortes/auto_0068.jpg"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.4494268,
+     -34.5999686
+    ]
+   },
+   "properties": {
+    "id": 69,
+    "lote": "Lote B",
+    "tag": null,
+    "vin": null,
+    "modelo": null,
+    "color": null,
+    "conf": 0.76,
+    "largo_m": 3.5,
+    "rumbo": 179,
+    "foto": "DJI_20261014100001_0002_D.JPG",
+    "recorte": "recortes/auto_0069.jpg"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.4492712,
+     -34.5999689
+    ]
+   },
+   "properties": {
+    "id": 70,
+    "lote": "Lote B",
+    "tag": null,
+    "vin": null,
+    "modelo": null,
+    "color": null,
+    "conf": 0.8,
+    "largo_m": 4.4,
+    "rumbo": 179,
+    "foto": "DJI_20261014100001_0002_D.JPG",
+    "recorte": "recortes/auto_0070.jpg"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.4491592,
+     -34.5999695
+    ]
+   },
+   "properties": {
+    "id": 71,
+    "lote": "Lote B",
+    "tag": null,
+    "vin": null,
+    "modelo": null,
+    "color": null,
+    "conf": 0.46,
+    "largo_m": 3.4,
+    "rumbo": 0,
+    "foto": "DJI_20261014100001_0002_D.JPG",
+    "recorte": "recortes/auto_0071.jpg"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.4494505,
+     -34.5999695
+    ]
+   },
+   "properties": {
+    "id": 72,
+    "lote": "Lote B",
+    "tag": null,
+    "vin": null,
+    "modelo": null,
+    "color": null,
+    "conf": 0.75,
+    "largo_m": 4.0,
+    "rumbo": 178,
+    "foto": "DJI_20261014100001_0002_D.JPG",
+    "recorte": "recortes/auto_0072.jpg"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.4494027,
+     -34.5999696
+    ]
+   },
+   "properties": {
+    "id": 73,
+    "lote": "Lote B",
+    "tag": 6,
+    "vin": null,
+    "modelo": null,
+    "color": null,
+    "conf": 0.76,
+    "largo_m": 4.2,
+    "rumbo": 179,
+    "foto": "DJI_20261014100001_0002_D.JPG",
+    "recorte": "recortes/auto_0073.jpg"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.4495391,
+     -34.5999699
+    ]
+   },
+   "properties": {
+    "id": 74,
+    "lote": "Lote B",
+    "tag": null,
+    "vin": null,
+    "modelo": null,
+    "color": null,
+    "conf": 0.75,
+    "largo_m": 4.6,
+    "rumbo": 179,
+    "foto": "DJI_20261014100001_0002_D.JPG",
+    "recorte": "recortes/auto_0074.jpg"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.4492137,
+     -34.5999716
+    ]
+   },
+   "properties": {
+    "id": 75,
+    "lote": "Lote B",
+    "tag": null,
+    "vin": null,
+    "modelo": null,
+    "color": null,
+    "conf": 0.8,
+    "largo_m": 4.2,
+    "rumbo": 1,
+    "foto": "DJI_20261014100001_0002_D.JPG",
+    "recorte": "recortes/auto_0075.jpg"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.4491881,
+     -34.5999732
+    ]
+   },
+   "properties": {
+    "id": 76,
+    "lote": null,
+    "tag": null,
+    "vin": null,
+    "modelo": null,
+    "color": null,
+    "conf": 0.73,
+    "largo_m": 4.3,
+    "rumbo": 0,
+    "foto": "DJI_20261014100001_0002_D.JPG",
+    "recorte": "recortes/auto_0076.jpg"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.4494797,
+     -34.5999755
+    ]
+   },
+   "properties": {
+    "id": 77,
+    "lote": null,
+    "tag": null,
+    "vin": null,
+    "modelo": null,
+    "color": null,
+    "conf": 0.76,
+    "largo_m": 4.7,
+    "rumbo": 179,
+    "foto": "DJI_20261014100001_0002_D.JPG",
+    "recorte": "recortes/auto_0077.jpg"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.4502094,
+     -34.6000071
+    ]
+   },
+   "properties": {
+    "id": 78,
+    "lote": null,
+    "tag": null,
+    "vin": null,
+    "modelo": null,
+    "color": null,
+    "conf": 0.6,
+    "largo_m": 4.8,
+    "rumbo": 124,
+    "foto": "DJI_20261014100000_0001_D.JPG",
+    "recorte": "recortes/auto_0078.jpg"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.4503675,
+     -34.6000192
+    ]
+   },
+   "properties": {
+    "id": 79,
+    "lote": "Fila oeste",
+    "tag": null,
+    "vin": null,
+    "modelo": null,
+    "color": null,
+    "conf": 0.48,
+    "largo_m": 4.6,
+    "rumbo": 90,
+    "foto": "DJI_20261014100000_0001_D.JPG",
+    "recorte": "recortes/auto_0079.jpg"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.4490714,
+     -34.6000285
+    ]
+   },
+   "properties": {
+    "id": 80,
+    "lote": "Lote D",
+    "tag": null,
+    "vin": null,
+    "modelo": null,
+    "color": null,
+    "conf": 0.33,
+    "largo_m": 4.8,
+    "rumbo": 0,
+    "foto": "DJI_20261014100001_0002_D.JPG",
+    "recorte": "recortes/auto_0080.jpg"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.4492605,
+     -34.6000338
+    ]
+   },
+   "properties": {
+    "id": 81,
+    "lote": "Lote D",
+    "tag": null,
+    "vin": null,
+    "modelo": null,
+    "color": null,
+    "conf": 0.79,
+    "largo_m": 5.1,
+    "rumbo": 99,
+    "foto": "DJI_20261014100001_0002_D.JPG",
+    "recorte": "recortes/auto_0081.jpg"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.4503754,
+     -34.6000435
+    ]
+   },
+   "properties": {
+    "id": 82,
+    "lote": "Fila oeste",
+    "tag": null,
+    "vin": null,
+    "modelo": null,
+    "color": null,
+    "conf": 0.67,
+    "largo_m": 3.3,
+    "rumbo": 93,
+    "foto": "DJI_20261014100000_0001_D.JPG",
+    "recorte": "recortes/auto_0082.jpg"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.4499412,
+     -34.60006
+    ]
+   },
+   "properties": {
+    "id": 83,
+    "lote": "Lote C",
+    "tag": null,
+    "vin": null,
+    "modelo": null,
+    "color": null,
+    "conf": 0.65,
+    "largo_m": 4.4,
+    "rumbo": 179,
+    "foto": "DJI_20261014100000_0001_D.JPG",
+    "recorte": "recortes/auto_0083.jpg"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.4501265,
+     -34.6000645
+    ]
+   },
+   "properties": {
+    "id": 84,
+    "lote": "Lote C",
+    "tag": null,
+    "vin": null,
+    "modelo": null,
+    "color": null,
+    "conf": 0.77,
+    "largo_m": 4.1,
+    "rumbo": 178,
+    "foto": "DJI_20261014100000_0001_D.JPG",
+    "recorte": "recortes/auto_0084.jpg"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.4500981,
+     -34.6000651
+    ]
+   },
+   "properties": {
+    "id": 85,
+    "lote": "Lote C",
+    "tag": 8,
+    "vin": null,
+    "modelo": null,
+    "color": null,
+    "conf": 0.58,
+    "largo_m": 4.6,
+    "rumbo": 179,
+    "foto": "DJI_20261014100000_0001_D.JPG",
+    "recorte": "recortes/auto_0085.jpg"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.4503703,
+     -34.600066
+    ]
+   },
+   "properties": {
+    "id": 86,
+    "lote": "Fila oeste",
+    "tag": null,
+    "vin": null,
+    "modelo": null,
+    "color": null,
+    "conf": 0.23,
+    "largo_m": 3.6,
+    "rumbo": 92,
+    "foto": "DJI_20261014100000_0001_D.JPG",
+    "recorte": "recortes/auto_0086.jpg"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.4499742,
+     -34.6000661
+    ]
+   },
+   "properties": {
+    "id": 87,
+    "lote": "Lote C",
+    "tag": null,
+    "vin": null,
+    "modelo": null,
+    "color": null,
+    "conf": 0.69,
+    "largo_m": 3.9,
+    "rumbo": 179,
+    "foto": "DJI_20261014100000_0001_D.JPG",
+    "recorte": "recortes/auto_0087.jpg"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.4501548,
+     -34.6000678
+    ]
+   },
+   "properties": {
+    "id": 88,
+    "lote": "Lote C",
+    "tag": 5,
+    "vin": null,
+    "modelo": null,
+    "color": null,
+    "conf": 0.68,
+    "largo_m": 3.8,
+    "rumbo": 178,
+    "foto": "DJI_20261014100000_0001_D.JPG",
+    "recorte": "recortes/auto_0088.jpg"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.4501814,
+     -34.6000693
+    ]
+   },
+   "properties": {
+    "id": 89,
+    "lote": "Lote C",
+    "tag": null,
+    "vin": null,
+    "modelo": null,
+    "color": null,
+    "conf": 0.72,
+    "largo_m": 4.4,
+    "rumbo": 179,
+    "foto": "DJI_20261014100000_0001_D.JPG",
+    "recorte": "recortes/auto_0089.jpg"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.4502082,
+     -34.6000715
+    ]
+   },
+   "properties": {
+    "id": 90,
+    "lote": "Lote C",
+    "tag": null,
+    "vin": null,
+    "modelo": null,
+    "color": null,
+    "conf": 0.79,
+    "largo_m": 3.7,
+    "rumbo": 0,
+    "foto": "DJI_20261014100000_0001_D.JPG",
+    "recorte": "recortes/auto_0090.jpg"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.4491335,
+     -34.6000723
+    ]
+   },
+   "properties": {
+    "id": 91,
+    "lote": "Lote D",
+    "tag": 7,
+    "vin": null,
+    "modelo": null,
+    "color": null,
+    "conf": 0.6,
+    "largo_m": 4.1,
+    "rumbo": 10,
+    "foto": "DJI_20261014100001_0002_D.JPG",
+    "recorte": "recortes/auto_0091.jpg"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.4494824,
+     -34.6000751
+    ]
+   },
+   "properties": {
+    "id": 92,
+    "lote": "Lote D",
+    "tag": null,
+    "vin": null,
+    "modelo": null,
+    "color": null,
+    "conf": 0.78,
+    "largo_m": 4.3,
+    "rumbo": 0,
+    "foto": "DJI_20261014100001_0002_D.JPG",
+    "recorte": "recortes/auto_0092.jpg"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.4494239,
+     -34.6000757
+    ]
+   },
+   "properties": {
+    "id": 93,
+    "lote": "Lote D",
+    "tag": null,
+    "vin": null,
+    "modelo": null,
+    "color": null,
+    "conf": 0.79,
+    "largo_m": 4.4,
+    "rumbo": 1,
+    "foto": "DJI_20261014100001_0002_D.JPG",
+    "recorte": "recortes/auto_0093.jpg"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.4493455,
+     -34.6000763
+    ]
+   },
+   "properties": {
+    "id": 94,
+    "lote": "Lote D",
+    "tag": null,
+    "vin": null,
+    "modelo": null,
+    "color": null,
+    "conf": 0.7,
+    "largo_m": 3.4,
+    "rumbo": 177,
+    "foto": "DJI_20261014100001_0002_D.JPG",
+    "recorte": "recortes/auto_0094.jpg"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.4491912,
+     -34.6000765
+    ]
+   },
+   "properties": {
+    "id": 95,
+    "lote": "Lote D",
+    "tag": null,
+    "vin": null,
+    "modelo": null,
+    "color": null,
+    "conf": 0.75,
+    "largo_m": 4.3,
+    "rumbo": 4,
+    "foto": "DJI_20261014100001_0002_D.JPG",
+    "recorte": "recortes/auto_0095.jpg"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.4492731,
+     -34.6000776
+    ]
+   },
+   "properties": {
+    "id": 96,
+    "lote": "Lote D",
+    "tag": null,
+    "vin": null,
+    "modelo": null,
+    "color": null,
+    "conf": 0.79,
+    "largo_m": 4.1,
+    "rumbo": 0,
+    "foto": "DJI_20261014100001_0002_D.JPG",
+    "recorte": "recortes/auto_0096.jpg"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.4494518,
+     -34.6000776
+    ]
+   },
+   "properties": {
+    "id": 97,
+    "lote": "Lote D",
+    "tag": null,
+    "vin": null,
+    "modelo": null,
+    "color": null,
+    "conf": 0.82,
+    "largo_m": 4.1,
+    "rumbo": 1,
+    "foto": "DJI_20261014100001_0002_D.JPG",
+    "recorte": "recortes/auto_0097.jpg"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.449247,
+     -34.6000781
+    ]
+   },
+   "properties": {
+    "id": 98,
+    "lote": "Lote D",
+    "tag": null,
+    "vin": null,
+    "modelo": null,
+    "color": null,
+    "conf": 0.76,
+    "largo_m": 3.5,
+    "rumbo": 1,
+    "foto": "DJI_20261014100001_0002_D.JPG",
+    "recorte": "recortes/auto_0098.jpg"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.4493938,
+     -34.6000781
+    ]
+   },
+   "properties": {
+    "id": 99,
+    "lote": "Lote D",
+    "tag": null,
+    "vin": null,
+    "modelo": null,
+    "color": null,
+    "conf": 0.8,
+    "largo_m": 3.6,
+    "rumbo": 1,
+    "foto": "DJI_20261014100001_0002_D.JPG",
+    "recorte": "recortes/auto_0099.jpg"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.4496745,
+     -34.6000805
+    ]
+   },
+   "properties": {
+    "id": 100,
+    "lote": "Lote C",
+    "tag": null,
+    "vin": null,
+    "modelo": null,
+    "color": null,
+    "conf": 0.63,
+    "largo_m": 4.1,
+    "rumbo": 177,
+    "foto": "DJI_20261014100001_0002_D.JPG",
+    "recorte": "recortes/auto_0100.jpg"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.4495428,
+     -34.600081
+    ]
+   },
+   "properties": {
+    "id": 101,
+    "lote": "Lote D",
+    "tag": null,
+    "vin": null,
+    "modelo": null,
+    "color": null,
+    "conf": 0.74,
+    "largo_m": 4.2,
+    "rumbo": 173,
+    "foto": "DJI_20261014100001_0002_D.JPG",
+    "recorte": "recortes/auto_0101.jpg"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.450368,
+     -34.6000893
+    ]
+   },
+   "properties": {
+    "id": 102,
+    "lote": "Fila oeste",
+    "tag": null,
+    "vin": null,
+    "modelo": null,
+    "color": null,
+    "conf": 0.68,
+    "largo_m": 4.5,
+    "rumbo": 90,
+    "foto": "DJI_20261014100000_0001_D.JPG",
+    "recorte": "recortes/auto_0102.jpg"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.4503691,
+     -34.60011
+    ]
+   },
+   "properties": {
+    "id": 103,
+    "lote": "Fila oeste",
+    "tag": null,
+    "vin": null,
+    "modelo": null,
+    "color": null,
+    "conf": 0.61,
+    "largo_m": 3.9,
+    "rumbo": 89,
+    "foto": "DJI_20261014100000_0001_D.JPG",
+    "recorte": "recortes/auto_0103.jpg"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.4501791,
+     -34.6001125
+    ]
+   },
+   "properties": {
+    "id": 104,
+    "lote": "Lote C",
+    "tag": null,
+    "vin": null,
+    "modelo": null,
+    "color": null,
+    "conf": 0.59,
+    "largo_m": 4.4,
+    "rumbo": 0,
+    "foto": "DJI_20261014100000_0001_D.JPG",
+    "recorte": "recortes/auto_0104.jpg"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.4502095,
+     -34.6001134
+    ]
+   },
+   "properties": {
+    "id": 105,
+    "lote": "Lote C",
+    "tag": null,
+    "vin": null,
+    "modelo": null,
+    "color": null,
+    "conf": 0.74,
+    "largo_m": 3.9,
+    "rumbo": 0,
+    "foto": "DJI_20261014100000_0001_D.JPG",
+    "recorte": "recortes/auto_0105.jpg"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.4500987,
+     -34.6001176
+    ]
+   },
+   "properties": {
+    "id": 106,
+    "lote": "Lote C",
+    "tag": null,
+    "vin": null,
+    "modelo": null,
+    "color": null,
+    "conf": 0.62,
+    "largo_m": 4.0,
+    "rumbo": 180,
+    "foto": "DJI_20261014100000_0001_D.JPG",
+    "recorte": "recortes/auto_0106.jpg"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.4493059,
+     -34.6001185
+    ]
+   },
+   "properties": {
+    "id": 107,
+    "lote": "Lote D",
+    "tag": null,
+    "vin": null,
+    "modelo": null,
+    "color": null,
+    "conf": 0.63,
+    "largo_m": 3.5,
+    "rumbo": 5,
+    "foto": "DJI_20261014100001_0002_D.JPG",
+    "recorte": "recortes/auto_0107.jpg"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.4500694,
+     -34.600119
+    ]
+   },
+   "properties": {
+    "id": 108,
+    "lote": "Lote C",
+    "tag": null,
+    "vin": null,
+    "modelo": null,
+    "color": null,
+    "conf": 0.63,
+    "largo_m": 3.9,
+    "rumbo": 174,
+    "foto": "DJI_20261014100000_0001_D.JPG",
+    "recorte": "recortes/auto_0108.jpg"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.4491895,
+     -34.6001207
+    ]
+   },
+   "properties": {
+    "id": 109,
+    "lote": "Lote D",
+    "tag": null,
+    "vin": null,
+    "modelo": null,
+    "color": null,
+    "conf": 0.2,
+    "largo_m": 3.7,
+    "rumbo": 179,
+    "foto": "DJI_20261014100001_0002_D.JPG",
+    "recorte": "recortes/auto_0109.jpg"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.4493926,
+     -34.6001211
+    ]
+   },
+   "properties": {
+    "id": 110,
+    "lote": "Lote D",
+    "tag": null,
+    "vin": null,
+    "modelo": null,
+    "color": null,
+    "conf": 0.74,
+    "largo_m": 4.5,
+    "rumbo": 180,
+    "foto": "DJI_20261014100001_0002_D.JPG",
+    "recorte": "recortes/auto_0110.jpg"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.4492763,
+     -34.600122
+    ]
+   },
+   "properties": {
+    "id": 111,
+    "lote": "Lote D",
+    "tag": null,
+    "vin": null,
+    "modelo": null,
+    "color": null,
+    "conf": 0.79,
+    "largo_m": 4.2,
+    "rumbo": 177,
+    "foto": "DJI_20261014100001_0002_D.JPG",
+    "recorte": "recortes/auto_0111.jpg"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.4496423,
+     -34.6001235
+    ]
+   },
+   "properties": {
+    "id": 112,
+    "lote": "Lote D",
+    "tag": null,
+    "vin": null,
+    "modelo": null,
+    "color": null,
+    "conf": 0.59,
+    "largo_m": 5.6,
+    "rumbo": 175,
+    "foto": "DJI_20261014100001_0002_D.JPG",
+    "recorte": "recortes/auto_0112.jpg"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.4492464,
+     -34.6001239
+    ]
+   },
+   "properties": {
+    "id": 113,
+    "lote": "Lote D",
+    "tag": null,
+    "vin": null,
+    "modelo": null,
+    "color": null,
+    "conf": 0.77,
+    "largo_m": 4.6,
+    "rumbo": 177,
+    "foto": "DJI_20261014100001_0002_D.JPG",
+    "recorte": "recortes/auto_0113.jpg"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.4503693,
+     -34.6001342
+    ]
+   },
+   "properties": {
+    "id": 114,
+    "lote": "Fila oeste",
+    "tag": null,
+    "vin": null,
+    "modelo": null,
+    "color": null,
+    "conf": 0.75,
+    "largo_m": 4.2,
+    "rumbo": 90,
+    "foto": "DJI_20261014100000_0001_D.JPG",
+    "recorte": "recortes/auto_0114.jpg"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.4503701,
+     -34.6001575
+    ]
+   },
+   "properties": {
+    "id": 115,
+    "lote": "Fila oeste",
+    "tag": null,
+    "vin": null,
+    "modelo": null,
+    "color": null,
+    "conf": 0.59,
+    "largo_m": 3.9,
+    "rumbo": 90,
+    "foto": "DJI_20261014100000_0001_D.JPG",
+    "recorte": "recortes/auto_0115.jpg"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.4503732,
+     -34.6001816
+    ]
+   },
+   "properties": {
+    "id": 116,
+    "lote": "Fila oeste",
+    "tag": null,
+    "vin": null,
+    "modelo": null,
+    "color": null,
+    "conf": 0.62,
+    "largo_m": 3.6,
+    "rumbo": 91,
+    "foto": "DJI_20261014100000_0001_D.JPG",
+    "recorte": "recortes/auto_0116.jpg"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.4491391,
+     -34.6001944
+    ]
+   },
+   "properties": {
+    "id": 117,
+    "lote": null,
+    "tag": null,
+    "vin": null,
+    "modelo": null,
+    "color": null,
+    "conf": 0.23,
+    "largo_m": 4.6,
+    "rumbo": 10,
+    "foto": "DJI_20261014100001_0002_D.JPG",
+    "recorte": "recortes/auto_0117.jpg"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.4503708,
+     -34.6002044
+    ]
+   },
+   "properties": {
+    "id": 118,
+    "lote": "Fila oeste",
+    "tag": null,
+    "vin": null,
+    "modelo": null,
+    "color": null,
+    "conf": 0.64,
+    "largo_m": 3.9,
+    "rumbo": 90,
+    "foto": "DJI_20261014100000_0001_D.JPG",
+    "recorte": "recortes/auto_0118.jpg"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.4493111,
+     -34.6002184
+    ]
+   },
+   "properties": {
+    "id": 119,
+    "lote": null,
+    "tag": 11,
+    "vin": null,
+    "modelo": null,
+    "color": null,
+    "conf": 0.71,
+    "largo_m": 4.2,
+    "rumbo": 4,
+    "foto": "DJI_20261014100001_0002_D.JPG",
+    "recorte": "recortes/auto_0119.jpg"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.4493648,
+     -34.600221
+    ]
+   },
+   "properties": {
+    "id": 120,
+    "lote": null,
+    "tag": null,
+    "vin": null,
+    "modelo": null,
+    "color": null,
+    "conf": 0.74,
+    "largo_m": 3.9,
+    "rumbo": 2,
+    "foto": "DJI_20261014100001_0002_D.JPG",
+    "recorte": "recortes/auto_0120.jpg"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.4494128,
+     -34.6002222
+    ]
+   },
+   "properties": {
+    "id": 121,
+    "lote": null,
+    "tag": null,
+    "vin": null,
+    "modelo": null,
+    "color": null,
+    "conf": 0.73,
+    "largo_m": 4.7,
+    "rumbo": 175,
+    "foto": "DJI_20261014100001_0002_D.JPG",
+    "recorte": "recortes/auto_0121.jpg"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.4502158,
+     -34.6002232
+    ]
+   },
+   "properties": {
+    "id": 122,
+    "lote": null,
+    "tag": null,
+    "vin": null,
+    "modelo": null,
+    "color": null,
+    "conf": 0.62,
+    "largo_m": 4.9,
+    "rumbo": 7,
+    "foto": "DJI_20261014100000_0001_D.JPG",
+    "recorte": "recortes/auto_0122.jpg"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -58.4503716,
+     -34.6002325
+    ]
+   },
+   "properties": {
+    "id": 123,
+    "lote": "Fila oeste",
+    "tag": null,
+    "vin": null,
+    "modelo": null,
+    "color": null,
+    "conf": 0.51,
+    "largo_m": 4.1,
+    "rumbo": 91,
+    "foto": "DJI_20261014100000_0001_D.JPG",
+    "recorte": "recortes/auto_0123.jpg"
+   }
+  }
+ ]
+}

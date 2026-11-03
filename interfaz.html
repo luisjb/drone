@@ -1,0 +1,358 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Inventario del playón</title>
+<style>
+  :root { --bg:#14171c; --panel:#1d2128; --campo:#14171c; --borde:#2e343e; --texto:#e8eaed; --suave:#9aa3ae;
+          --acento:#ffc928; --ok:#3ddc84; --mal:#ff6b6b; }
+  * { box-sizing:border-box; }
+  html, body { margin:0; height:100%; background:var(--bg); color:var(--texto);
+               font:14px/1.45 system-ui, -apple-system, "Segoe UI", sans-serif; }
+  #app { display:flex; height:100%; }
+  #panel { width:420px; flex:none; display:flex; flex-direction:column; background:var(--panel);
+           border-right:1px solid var(--borde); }
+  header { padding:16px 18px 0; }
+  h1 { margin:0; font-size:17px; }
+  .sub { color:var(--suave); font-size:12px; margin-top:2px; }
+  nav { display:flex; gap:4px; margin-top:14px; border-bottom:1px solid var(--borde); }
+  nav button { flex:1; padding:9px 4px 10px; background:none; border:0; border-bottom:2px solid transparent;
+               color:var(--suave); font:inherit; cursor:pointer; }
+  nav button.activo { color:var(--texto); border-bottom-color:var(--acento); }
+  nav .num { display:inline-block; width:18px; height:18px; line-height:18px; border-radius:50%; font-size:11px;
+             background:var(--borde); color:var(--texto); margin-right:6px; }
+  nav button.activo .num { background:var(--acento); color:#14171c; }
+  .vista { display:none; flex:1; overflow:auto; overflow-x:hidden; padding:16px 18px 20px; }
+  .vista.activa { display:block; }
+
+  label { display:block; font-size:12px; color:var(--suave); margin:14px 0 5px; }
+  label:first-child { margin-top:0; }
+  .ayuda { font-size:12px; color:var(--suave); margin-top:4px; }
+  input, select { width:100%; padding:8px 10px; border-radius:7px; border:1px solid var(--borde);
+                  background:var(--campo); color:var(--texto); font:inherit; }
+  input:focus, select:focus { outline:none; border-color:var(--acento); }
+  .fila { display:flex; gap:8px; }
+  .fila > * { flex:1; }
+  .fila > .fijo { flex:none; }
+  .rango { display:flex; align-items:center; gap:10px; }
+  .rango input { padding:0; accent-color:var(--acento); }
+  .rango output { width:40px; text-align:right; font-variant-numeric:tabular-nums; }
+  .btn { padding:8px 14px; border-radius:7px; border:1px solid var(--borde); background:#262b34;
+               color:var(--texto); font:inherit; cursor:pointer; white-space:nowrap; }
+  .btn:hover { border-color:var(--suave); }
+  button.prim { background:var(--acento); border-color:var(--acento); color:#14171c; font-weight:600; }
+  button.prim:hover { filter:brightness(1.08); border-color:var(--acento); }
+  button:disabled { opacity:.45; cursor:default; filter:none; }
+  .acciones { display:flex; gap:8px; align-items:center; margin-top:20px; }
+  .aviso { font-size:12px; color:var(--ok); }
+  hr { border:0; border-top:1px solid var(--borde); margin:20px 0 4px; }
+  h2 { font-size:13px; margin:18px 0 0; color:var(--texto); }
+
+  .barra-sup { display:flex; justify-content:space-between; align-items:center; gap:8px; margin-bottom:10px; }
+  .barra-sup .sub { margin:0; min-width:0; overflow-wrap:anywhere; }
+  .lista { border:1px solid var(--borde); border-radius:8px; overflow:hidden; }
+  .item { display:flex; gap:10px; align-items:center; padding:9px 12px; border-top:1px solid var(--borde); }
+  .item:first-child { border-top:0; }
+  .item input[type=checkbox] { width:auto; accent-color:var(--acento); }
+  .item .t { flex:1; min-width:0; }
+  .item .n { white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+  .item .s { color:var(--suave); font-size:12px; }
+  .chip { font-size:11px; padding:1px 7px; border-radius:99px; white-space:nowrap; }
+  .chip.ok { background:#203a2b; color:var(--ok); }
+  .chip.mal { background:#3d2224; color:var(--mal); }
+  .chip.gris { background:#2a2f38; color:var(--suave); }
+  .vacio { padding:22px 14px; text-align:center; color:var(--suave); font-size:13px; }
+
+  #progreso { display:none; margin-top:16px; border:1px solid var(--borde); border-radius:8px; padding:12px; }
+  #progreso.visible { display:block; }
+  .pbar { height:6px; background:var(--borde); border-radius:3px; overflow:hidden; margin:8px 0 10px; }
+  .pbar div { height:100%; width:0; background:var(--acento); transition:width .3s; }
+  #log { margin:0; max-height:220px; overflow:auto; font:12px/1.45 ui-monospace, Consolas, monospace;
+         color:var(--suave); white-space:pre-wrap; overflow-wrap:anywhere; }
+
+  .res { cursor:pointer; }
+  .res:hover, .res.sel { background:#262b34; }
+  .res .k { text-align:right; font-variant-numeric:tabular-nums; }
+  .res .k b { display:block; font-size:16px; }
+
+  #visor { flex:1; position:relative; background:var(--bg); }
+  #visor iframe { position:absolute; inset:0; width:100%; height:100%; border:0; display:none; }
+  #visor .vacio { position:absolute; inset:0; display:flex; flex-direction:column; align-items:center;
+                  justify-content:center; gap:6px; font-size:14px; }
+  #visor .vacio b { color:var(--texto); font-size:16px; }
+  #abrir { position:absolute; bottom:28px; right:12px; z-index:5; display:none; text-decoration:none;
+           font-size:13px; box-shadow:0 2px 8px #0008; }
+
+  @media (max-width: 900px) {
+    #app { flex-direction:column; }
+    #panel { width:100%; height:55%; border-right:0; border-bottom:1px solid var(--borde); }
+  }
+</style>
+</head>
+<body>
+<div id="app">
+  <aside id="panel">
+    <header>
+      <h1>Inventario del playón</h1>
+      <div class="sub" id="estadoGeneral">Procesamiento de vuelos con video</div>
+      <nav>
+        <button data-vista="config" class="activo"><span class="num">1</span>Configuración</button>
+        <button data-vista="videos"><span class="num">2</span>Videos</button>
+        <button data-vista="resultados"><span class="num">3</span>Resultados</button>
+      </nav>
+    </header>
+
+    <!-- 1. Configuración -->
+    <section class="vista activa" id="v-config">
+      <label for="carpeta_videos">Carpeta de los videos</label>
+      <div class="fila">
+        <input id="carpeta_videos" placeholder="Ej.: E:\DCIM">
+        <button class="btn fijo" data-elegir="videos">Elegir…</button>
+      </div>
+      <div class="ayuda">Puede ser la microSD del drone. Se buscan los MP4 también en subcarpetas.</div>
+
+      <label for="lotes">Archivo de lotes (opcional)</label>
+      <div class="fila">
+        <input id="lotes" placeholder="lotes.geojson">
+        <button class="btn fijo" data-elegir="lotes">Elegir…</button>
+      </div>
+
+      <hr>
+      <h2>Parámetros</h2>
+
+      <label for="camara">Cámara usada en el video</label>
+      <select id="camara">
+        <option value="principal">Principal 24 mm (ángulo 71,6°)</option>
+        <option value="tele">Tele 70 mm (ángulo 27,8°)</option>
+        <option value="personalizada">Otra (indicar ángulo)</option>
+      </select>
+      <div id="filaHfov" style="display:none">
+        <label for="hfov">Ángulo de visión horizontal (°)</label>
+        <input id="hfov" type="number" step="0.1" min="5" max="150">
+      </div>
+
+      <div class="fila">
+        <div>
+          <label for="cada_m">Cuadro cada (m)</label>
+          <input id="cada_m" type="number" step="1" min="2" max="100">
+        </div>
+        <div>
+          <label for="alt_min">Altura mínima (m)</label>
+          <input id="alt_min" type="number" step="1" min="0" max="200">
+        </div>
+      </div>
+      <div class="ayuda">Distancia recorrida entre cuadros extraídos. Debajo de la altura mínima (despegue y
+        aterrizaje) no se procesa.</div>
+
+      <label for="conf">Confianza mínima de detección</label>
+      <div class="rango"><input id="conf" type="range" min="0.05" max="0.6" step="0.05"><output id="confVal"></output></div>
+      <div class="ayuda">Más baja detecta más autos, pero con más falsos positivos.</div>
+
+      <label for="yaw_modo">Orientación de la cámara</label>
+      <div class="fila">
+        <select id="yaw_modo">
+          <option value="auto">Automática (por la dirección de vuelo)</option>
+          <option value="fijo">Rumbo fijo</option>
+        </select>
+        <input id="yaw" class="fijo" type="number" step="1" min="0" max="360" style="width:90px" title="Grados (0 = norte)">
+      </div>
+      <div class="ayuda">Usá "Rumbo fijo" solo si la misión vuela siempre mirando al mismo lado (0° = norte).</div>
+
+      <div class="acciones">
+        <button class="btn prim" id="guardar">Guardar y ver videos</button>
+        <span class="aviso" id="guardado"></span>
+      </div>
+    </section>
+
+    <!-- 2. Videos -->
+    <section class="vista" id="v-videos">
+      <div class="barra-sup">
+        <div class="sub" id="carpetaActual"></div>
+        <button class="btn" id="recargar">Actualizar</button>
+      </div>
+      <div class="lista" id="listaVideos"></div>
+      <div class="acciones">
+        <button class="btn prim" id="procesar" disabled>Procesar seleccionados</button>
+        <span class="sub" id="nSel"></span>
+      </div>
+      <div id="progreso">
+        <div class="barra-sup" style="margin:0"><b id="progTitulo">Procesando…</b><span class="sub" id="progCuenta"></span></div>
+        <div class="pbar"><div id="progBarra"></div></div>
+        <pre id="log"></pre>
+      </div>
+    </section>
+
+    <!-- 3. Resultados -->
+    <section class="vista" id="v-resultados">
+      <div class="barra-sup">
+        <div class="sub">Elegí un vuelo para verlo en el mapa.</div>
+        <button class="btn" id="recargarRes">Actualizar</button>
+      </div>
+      <div class="lista" id="listaRes"></div>
+    </section>
+  </aside>
+
+  <main id="visor">
+    <div class="vacio" id="visorVacio"><b>Sin mapa seleccionado</b>Procesá un video o elegí un vuelo en Resultados.</div>
+    <a class="btn" id="abrir" target="_blank">Abrir en pestaña nueva ↗</a>
+    <iframe id="mapa" title="Mapa del vuelo"></iframe>
+  </main>
+</div>
+
+<script>
+const $ = s => document.querySelector(s);
+const api = async (ruta, datos) => {
+  const r = await fetch(ruta, datos === undefined ? {} :
+    { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(datos) });
+  const j = await r.json();
+  if (!r.ok) throw new Error(j.error || r.statusText);
+  return j;
+};
+const esc = s => String(s ?? '').replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
+
+// ── pestañas
+function ir(vista) {
+  document.querySelectorAll('nav button').forEach(b => b.classList.toggle('activo', b.dataset.vista === vista));
+  document.querySelectorAll('.vista').forEach(v => v.classList.toggle('activa', v.id === 'v-' + vista));
+  if (vista === 'videos') cargarVideos();
+  if (vista === 'resultados') cargarResultados();
+}
+document.querySelectorAll('nav button').forEach(b => b.onclick = () => ir(b.dataset.vista));
+
+// ── 1. configuración
+const CAMPOS = ['carpeta_videos', 'lotes', 'camara', 'hfov', 'cada_m', 'alt_min', 'conf', 'yaw_modo', 'yaw'];
+function actualizarVisibles() {
+  $('#filaHfov').style.display = $('#camara').value === 'personalizada' ? '' : 'none';
+  $('#yaw').disabled = $('#yaw_modo').value !== 'fijo';
+  $('#confVal').value = Number($('#conf').value).toFixed(2);
+}
+['camara', 'yaw_modo', 'conf'].forEach(id => $('#' + id).addEventListener('input', actualizarVisibles));
+
+async function cargarConfig() {
+  const c = await api('/api/config');
+  CAMPOS.forEach(k => $('#' + k).value = c[k]);
+  actualizarVisibles();
+  return c;
+}
+document.querySelectorAll('[data-elegir]').forEach(b => b.onclick = async () => {
+  b.disabled = true;
+  try {
+    const { ruta } = await api('/api/elegir', { tipo: b.dataset.elegir });
+    if (ruta) $(b.dataset.elegir === 'lotes' ? '#lotes' : '#carpeta_videos').value = ruta;
+  } finally { b.disabled = false; }
+});
+$('#guardar').onclick = async () => {
+  const datos = Object.fromEntries(CAMPOS.map(k => [k, $('#' + k).value]));
+  await api('/api/config', datos);
+  $('#guardado').textContent = '✔ Guardado';
+  setTimeout(() => $('#guardado').textContent = '', 2000);
+  ir('videos');
+};
+
+// ── 2. videos
+let ocupado = false;
+async function cargarVideos() {
+  const c = await api('/api/config');
+  $('#carpetaActual').textContent = c.carpeta_videos || 'Sin carpeta configurada';
+  const { carpeta_ok, videos } = await api('/api/videos');
+  const lista = $('#listaVideos');
+  if (!carpeta_ok) {
+    lista.innerHTML = '<div class="vacio">La carpeta no existe o no está configurada.<br>Revisala en el paso 1.</div>';
+  } else if (!videos.length) {
+    lista.innerHTML = '<div class="vacio">No hay videos MP4 en esta carpeta.</div>';
+  } else {
+    lista.innerHTML = videos.map(v => `
+      <label class="item" style="margin:0;color:inherit;font-size:inherit">
+        <input type="checkbox" value="${esc(v.ruta)}" ${v.srt ? '' : 'disabled'} ${v.srt && !v.procesado ? 'checked' : ''}>
+        <div class="t">
+          <div class="n" title="${esc(v.ruta)}">${esc(v.nombre)}</div>
+          <div class="s">${esc(v.fecha)} · ${v.mb} MB${v.carpeta && v.carpeta !== '.' ? ' · ' + esc(v.carpeta) : ''}</div>
+        </div>
+        ${!v.srt ? '<span class="chip mal" title="Falta el .SRT con la posición GPS. Activá Subtítulos de video en DJI Fly.">sin .SRT</span>'
+          : v.procesado ? `<span class="chip ok" data-res="${esc(v.resultado)}" style="cursor:pointer" title="Ver mapa">procesado</span>`
+          : '<span class="chip gris">nuevo</span>'}
+      </label>`).join('');
+    lista.querySelectorAll('input').forEach(i => i.onchange = contarSel);
+    lista.querySelectorAll('[data-res]').forEach(ch => ch.onclick = e => {
+      e.preventDefault(); verMapa(ch.dataset.res); ir('resultados');
+    });
+  }
+  contarSel();
+}
+function seleccionados() { return [...document.querySelectorAll('#listaVideos input:checked')].map(i => i.value); }
+function contarSel() {
+  const n = seleccionados().length;
+  $('#nSel').textContent = n ? `${n} seleccionado${n > 1 ? 's' : ''}` : '';
+  $('#procesar').disabled = !n || ocupado;
+}
+$('#recargar').onclick = cargarVideos;
+$('#procesar').onclick = async () => {
+  try { await api('/api/procesar', { videos: seleccionados() }); seguir(); }
+  catch (e) { alert(e.message); }
+};
+
+let ultimoVisto = null;
+async function seguir() {
+  const e = await api('/api/estado');
+  const estabaOcupado = ocupado;
+  ocupado = e.ocupado;
+  const p = $('#progreso');
+  if (e.ocupado || e.log.length) p.classList.add('visible');
+  const enCurso = e.ocupado ? Math.min(e.hechos + 0.5, e.total) : e.hechos;
+  $('#progBarra').style.width = e.total ? (100 * enCurso / e.total) + '%' : '0';
+  $('#progCuenta').textContent = e.total ? `${e.hechos} de ${e.total}` : '';
+  $('#progTitulo').textContent = e.ocupado ? `Procesando ${e.actual || ''}…`
+    : e.errores.length ? `Terminado con ${e.errores.length} error(es)` : 'Terminado';
+  $('#estadoGeneral').textContent = e.ocupado ? `⏳ Procesando ${e.hechos + 1} de ${e.total}…` : 'Procesamiento de vuelos con video';
+  const log = $('#log'), abajo = log.scrollTop + log.clientHeight >= log.scrollHeight - 10;
+  log.textContent = e.log.join('\n');
+  if (abajo) log.scrollTop = log.scrollHeight;
+  contarSel();
+  if (e.ocupado) return setTimeout(seguir, 1000);
+  if (estabaOcupado) {  // recién terminó: refrescar y mostrar el último mapa
+    await cargarVideos();
+    const res = await api('/api/resultados');
+    if (res.length && res[0].nombre !== ultimoVisto) verMapa(res[0].nombre);
+  }
+}
+
+// ── 3. resultados
+async function cargarResultados() {
+  const res = await api('/api/resultados');
+  $('#listaRes').innerHTML = res.length ? res.map(r => `
+    <div class="item res ${r.nombre === ultimoVisto ? 'sel' : ''}" data-n="${esc(r.nombre)}">
+      <div class="t">
+        <div class="n">${esc(r.nombre.replace(/^video_/, ''))}</div>
+        <div class="s">${r.tipo === 'video' ? 'Video' : 'Fotos'} · procesado ${esc(r.fecha)}</div>
+      </div>
+      <div class="k"><b>${r.autos}</b><span class="s">autos</span></div>
+      <div class="k"><b>${r.tags}</b><span class="s">con tag</span></div>
+    </div>`).join('')
+    : '<div class="vacio">Todavía no hay vuelos procesados.</div>';
+  document.querySelectorAll('.res').forEach(el => el.onclick = () => verMapa(el.dataset.n));
+}
+$('#recargarRes').onclick = cargarResultados;
+
+function verMapa(nombre) {
+  ultimoVisto = nombre;
+  const url = `/salida/${encodeURIComponent(nombre)}/mapa.html`;
+  $('#mapa').src = url;
+  $('#mapa').style.display = 'block';
+  $('#visorVacio').style.display = 'none';
+  $('#abrir').href = url;
+  $('#abrir').style.display = 'inline-block';
+  document.querySelectorAll('.res').forEach(el => el.classList.toggle('sel', el.dataset.n === nombre));
+}
+
+// ── inicio
+(async () => {
+  const c = await cargarConfig();
+  if (c.carpeta_videos) ir('videos');
+  seguir();
+  const res = await api('/api/resultados');
+  if (res.length) verMapa(res[0].nombre);
+})();
+</script>
+</body>
+</html>

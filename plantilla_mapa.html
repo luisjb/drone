@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Inventario del playón</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
+<style>
+  :root { --bg:#14171c; --panel:#1d2128; --borde:#2e343e; --texto:#e8eaed; --suave:#9aa3ae;
+          --acento:#ffc928; --tag:#3ddc84; }
+  * { box-sizing: border-box; }
+  html, body { margin:0; height:100%; background:var(--bg); color:var(--texto);
+               font:14px/1.4 system-ui, -apple-system, "Segoe UI", sans-serif; }
+  #app { display:flex; height:100%; }
+  #panel { width:320px; display:flex; flex-direction:column; background:var(--panel); border-right:1px solid var(--borde); }
+  header { padding:16px; border-bottom:1px solid var(--borde); }
+  h1 { margin:0 0 4px; font-size:17px; }
+  .meta { color:var(--suave); font-size:12px; }
+  .stats { display:flex; gap:16px; margin-top:12px; }
+  .stat b { display:block; font-size:22px; font-variant-numeric:tabular-nums; }
+  .stat span { color:var(--suave); font-size:12px; }
+  #buscar { margin:12px 16px; padding:9px 11px; border-radius:8px; border:1px solid var(--borde);
+            background:var(--bg); color:var(--texto); font-size:14px; }
+  #lista { overflow:auto; flex:1; }
+  .item { display:flex; gap:10px; align-items:center; padding:8px 16px; cursor:pointer; border-top:1px solid var(--borde); }
+  .item:hover, .item.sel { background:#262b34; }
+  .item img { width:44px; height:44px; object-fit:cover; border-radius:6px; background:#000; }
+  .item .t { flex:1; min-width:0; }
+  .item .s { color:var(--suave); font-size:12px; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+  .chip { font-size:11px; padding:1px 6px; border-radius:99px; background:#203a2b; color:var(--tag); margin-left:4px; }
+  #mapa { flex:1; }
+  .leaflet-popup-content-wrapper { border-radius:10px; }
+  .pop img { width:220px; border-radius:6px; display:block; margin-bottom:6px; }
+  .pop a { color:#1a73e8; }
+  @media (max-width: 700px) {
+    #app { flex-direction:column-reverse; }
+    #panel { width:100%; height:42%; border-right:0; border-top:1px solid var(--borde); }
+  }
+</style>
+</head>
+<body>
+<div id="app">
+  <aside id="panel">
+    <header>
+      <h1>Inventario del playón</h1>
+      <div class="meta" id="vuelo"></div>
+      <div class="stats">
+        <div class="stat"><b id="nAutos">0</b><span>autos</span></div>
+        <div class="stat"><b id="nTags">0</b><span>con tag</span></div>
+        <div class="stat"><b id="nFotos">0</b><span>fotos</span></div>
+      </div>
+    </header>
+    <input id="buscar" placeholder="Buscar tag, VIN, modelo o lote…" autocomplete="off">
+    <div id="lista"></div>
+  </aside>
+  <div id="mapa"></div>
+</div>
+<script>
+const D = /*__DATOS__*/null;
+const mapa = L.map('mapa', { maxZoom: 22 });
+const pts = D.autos.map(a => [a.lat, a.lon]).concat(...D.huellas.map(h => h.esquinas));
+if (pts.length) mapa.fitBounds(pts, { padding: [20, 20] }); else mapa.setView([-34.6, -58.4], 15);
+const satelite = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}', {
+  maxZoom: 22, maxNativeZoom: 19, attribution: 'Imágenes © Esri'
+}).addTo(mapa);
+
+const capaDrone = L.layerGroup().addTo(mapa);
+D.huellas.forEach(h => {
+  if (h.orto) L.imageOverlay(h.orto.archivo, [h.orto.sw, h.orto.ne]).addTo(capaDrone);
+});
+const capaHuellas = L.layerGroup();
+D.huellas.forEach(h => {
+  if (h.esquinas.length === 4)
+    L.polygon(h.esquinas, { color:'#ffffff', weight:1, opacity:.5, fill:false, dashArray:'4 4' })
+      .bindTooltip(h.foto).addTo(capaHuellas);
+});
+const capaLotes = L.layerGroup().addTo(mapa);
+D.lotes.forEach(l => {
+  L.polygon(l.anillo, { color:'#ffc928', weight:2, fillOpacity:.06 })
+    .bindTooltip(l.nombre, { permanent:true, direction:'center', className:'' }).addTo(capaLotes);
+});
+
+L.control.layers({ 'Satélite': satelite }, {
+  'Fotos del vuelo': capaDrone, 'Contorno de cada foto': capaHuellas, 'Lotes': capaLotes
+}, { collapsed: false }).addTo(mapa);
+
+const marcadores = {};
+const titulo = a => a.modelo ? `${a.modelo}${a.color ? ' · ' + a.color : ''}` : `Auto ${a.id}`;
+D.autos.forEach(a => {
+  const m = L.circleMarker([a.lat, a.lon], {
+    radius: 6, weight: 2, color: '#000', fillColor: a.tag != null ? '#3ddc84' : '#ffc928', fillOpacity: .95
+  }).addTo(mapa);
+  const gm = `https://www.google.com/maps?q=${a.lat},${a.lon}`;
+  m.bindPopup(`<div class="pop"><img src="${a.recorte}" alt="">
+    <b>${titulo(a)}</b>${a.tag != null ? ' — tag #' + a.tag : ''}<br>
+    ${a.vin ? 'VIN ' + a.vin + '<br>' : ''}
+    Lote: ${a.lote || '—'}<br>
+    ${a.lat.toFixed(7)}, ${a.lon.toFixed(7)}<br>
+    <small>foto ${a.foto} · confianza ${a.conf}</small><br>
+    <a href="${gm}" target="_blank">Abrir en Google Maps</a></div>`, { maxWidth: 240 });
+  marcadores[a.id] = m;
+});
+
+document.getElementById('vuelo').textContent = D.nombre;
+document.getElementById('nAutos').textContent = D.autos.length;
+document.getElementById('nTags').textContent = D.autos.filter(a => a.tag != null).length;
+document.getElementById('nFotos').textContent = D.huellas.length;
+
+const lista = document.getElementById('lista');
+function pintar(filtro) {
+  const q = (filtro || '').trim().toLowerCase();
+  lista.innerHTML = '';
+  D.autos.filter(a => !q || [a.id, a.tag, a.vin, a.modelo, a.color, a.lote]
+      .some(v => v != null && String(v).toLowerCase().includes(q)))
+    .forEach(a => {
+      const el = document.createElement('div');
+      el.className = 'item';
+      el.innerHTML = `<img src="${a.recorte}" alt="" loading="lazy"><div class="t">
+        <div>${titulo(a)}${a.tag != null ? `<span class="chip">#${a.tag}</span>` : ''}</div>
+        <div class="s">${a.lote || 'sin lote'} · ${a.lat.toFixed(6)}, ${a.lon.toFixed(6)}</div></div>`;
+      el.onclick = () => {
+        document.querySelectorAll('.item.sel').forEach(x => x.classList.remove('sel'));
+        el.classList.add('sel');
+        mapa.setView([a.lat, a.lon], 21);
+        marcadores[a.id].openPopup();
+      };
+      lista.appendChild(el);
+    });
+}
+document.getElementById('buscar').addEventListener('input', e => pintar(e.target.value));
+pintar();
+</script>
+</body>
+</html>
